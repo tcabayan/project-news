@@ -10,4 +10,4 @@ This full stack application uses a combination of Mongoose,Cheerio, and Axios to
 This app uses the express, express-handlebars, mongoose, cheerio, and axios packages.
 
 # Visit 
-Visit https://quiet-fortress-46419.herokuapp.com/ to scrape the website yourself! 
+Visit https://quiet-fortress-46419.herokuapp.com/ to scrape NPR's website yourself! 
