@@ -1,0 +1,199 @@
+/* global styles */
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Lora';
+}
+.title-container {
+  margin: 0 auto;
+  max-width: 750px;
+  background-image: radial-gradient(#A3CEF1, #78CDD7);
+  box-shadow: 50px 50px 50px;
+  border-radius: 25px;
+}
+h1 {
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  margin: 50px 50px 50px 50px;
+  padding: 50px 50px 50px 50px;
+}
+
+
+/* article styles */
+#article-container {
+  background: rgb(100,200,300,.6);
+  border-radius: 25px;
+  margin: 40px 40px 40px 40px;
+  padding: 40px 40px 40px 40px
+}
+#saved-article-container {
+  background: rgb(100,200,300,.6);
+  border-radius: 25px;
+  margin: 40px 40px 40px 40px;
+  padding: 40px 40px 40px 40px
+}
+@media (max-width: 600px) {
+  #article-container {
+    background: rgb(100,200,300,.6);
+    border-radius: 25px;
+    margin: 0 auto;
+  }
+  #saved-article-container {
+    background: rgb(100,200,300,.6);
+    border-radius: 25px;
+    margin: 0 auto;
+  }
+}
+
+/* card styles */
+.card {
+  border: 10px solid pink;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px;
+  margin: 0 auto
+}
+.card .button {
+  letter-spacing: .1em;
+}
+.card .button:hover {
+  letter-spacing: .5em;
+  transition: .1s;
+}
+
+
+/* topbar styles */
+.topbar-responsive {
+    background: #2c3840;
+    padding: 1rem 1.5rem;
+  }
+  
+  .topbar-responsive .topbar-responsive-logo {
+    color: #fefefe;
+    vertical-align: middle;
+  }
+  
+  .topbar-responsive .menu {
+    background: #2c3840;
+  }
+
+  .topbar-responsive .menu .button {
+    margin: 0 15px 0 0;
+  }
+  
+  .topbar-responsive .menu li:last-of-type {
+    margin-right: 15px;
+  }
+  
+  .topbar-responsive .menu a {
+    color: #fefefe;
+    transition: color 0.15s ease-in;
+  }
+  
+  .topbar-responsive .menu a:hover {
+    color: #c6d1d8;
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-responsive .menu a {
+      padding: 0.875rem 0;
+    }
+  }
+  
+  .topbar-responsive .menu .topbar-responsive-button {
+    color: #fefefe;
+    border-color: #fefefe;
+    border-radius: 5000px;
+    transition: color 0.15s ease-in, border-color 0.15s ease-in;
+  }
+  
+  .topbar-responsive .menu .topbar-responsive-button:hover {
+    color: #c6d1d8;
+    border-color: #c6d1d8;
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-responsive .menu .topbar-responsive-button {
+      width: 100%;
+      margin: 0.875rem 0;
+    }
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-responsive {
+      padding: 0.75rem;
+    }
+    .topbar-responsive .top-bar-title {
+      position: relative;
+      width: 100%;
+    }
+    .topbar-responsive .top-bar-title span {
+      position: absolute;
+      right: 0;
+      border: 1px solid #fefefe;
+      border-radius: 5px;
+      padding: 0.25rem 0.45rem;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
+    .topbar-responsive .top-bar-title span .menu-icon {
+      margin-bottom: 4px;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes slideDown {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+  }
+  
+  @keyframes slideDown {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+  }
+  
+  @media screen and (max-width: 39.9375em) {
+    .topbar-responsive-links {
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+      -webkit-animation-duration: 0.5s;
+              animation-duration: 0.5s;
+      width: 100%;
+      -webkit-animation: fadeIn 1s ease-in;
+              animation: fadeIn 1s ease-in;
+    }
+  }
+  
+  

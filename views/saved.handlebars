@@ -1,0 +1,58 @@
+<nav class="top-bar topbar-responsive">
+  <div class="top-bar-title">
+    <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+    </span>
+    <a class="topbar-responsive-logo" href="#"><strong>Mongo Scraper</strong></a>
+  </div>
+  <div id="topbar-responsive" class="topbar-responsive-links">
+    <div class="top-bar-left">
+      <ul class="menu simple vertical medium-horizontal">
+        <li><a href="/">Home</a></li>
+        <li><a href="/saved">Saved Articles</a></li>
+        <div class="button">
+            <li><a href="/scrape" id="scrape">World News</a></li>
+        </div>
+        <div class="button" id="delete">
+            <li><a href="/delete-articles">Clear Articles</a></li>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="title-container animated fadeIn">
+  <h1>SAVED ARTICLES</h1>
+</div>
+
+<div class="grid" id="saved-article-container">
+    <div class="grid-x">
+          {{#if articles}}
+            {{#each articles}}
+              {{#if saved}}
+                <div class="cell medium-3 small-12">
+                  <div class="card animated fadeIn" style="width: 300px;">
+                    <p><button class="button expanded" data-open="exampleModal1{{_id}}">Add Note</button></p>
+                <div class="reveal" id="exampleModal1{{_id}}" data-reveal>
+                  <input class="titleinput" type="text" value="" placeholder="Enter Name">
+                  <input class="bodyinput" type="text" value="" placeholder="Enter Note">
+                  <div class="button" value="submit" id="savenote" data-id="{{_id}}" data-close>Submit</div>
+                  <div class="button float-right" value="delete" id="deletenote" data-id="{{_id}}" data-close>Delete</div>
+                  <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                      <div class="card-divider">
+                        <h4><a href="{{link}}">{{title}}</a></h4>
+                      </div>
+                  </div>
+              </div>
+              {{/if}}
+            {{/each}}
+                {{else}}
+                <div class="nothing-here-container title-container animated">
+                <h1>Oops, nothing saved yet!</h1>
+                </div>
+          {{/if}}
+          </div>
+      </div>

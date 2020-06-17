@@ -1,0 +1,31 @@
+{
+  "name": "project-news",
+  "version": "1.0.0",
+  "description": "A web app that lets users view and leave comments on the latest news",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcabayan/project-news.git"
+  },
+  "keywords": [],
+  "author": "Tamar Cabayan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tcabayan/project-news/issues"
+  },
+  "homepage": "https://github.com/tcabayan/project-news#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "handlebars": "^4.7.6",
+    "jquery": "^3.5.1",
+    "mongoose": "^5.9.18",
+    "morgan": "^1.10.0"
+  }
+}
