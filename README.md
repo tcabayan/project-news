@@ -1,9 +1,9 @@
-# project-news
+NPR Web-Scraper
 A web app that lets users view and leave comments on the latest news
 
-# NPR Web Scraper
+# Overview
 
-This full stack application uses Mongoose/Cheerio/Axios to scape the world news section of the NPR website. The app allows users to save articles, view saved articles, and add notes to the saved articles. 
+This full stack application uses a combination of Mongoose,Cheerio, and Axios to scape the world news section of the NPR website. The app allows users to save articles, view saved articles, and add notes to saved articles. 
 
 # Packages Installed
 
